@@ -1,4 +1,4 @@
-import { useEffect, lazy } from 'react';
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes, Navigate } from 'react-router-dom';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
