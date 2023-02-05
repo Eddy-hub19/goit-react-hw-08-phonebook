@@ -12,7 +12,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 /* <LogoutIcon /> */
 /* </IconButton> */
 
-export default function Contact({ id, name, number, avatar }) {
+export default function Contact({ id, name, number }) {
   const dispatch = useDispatch();
   const handleDelete = () => {
     setIsDeleting(true);
@@ -22,13 +22,6 @@ export default function Contact({ id, name, number, avatar }) {
 
   return (
     <ContactItem>
-      <img
-        style={{ borderRadius: '10px' }}
-        width="60"
-        height="60"
-        src={avatar}
-        alt={avatar}
-      />
       <Name>{name}:</Name>
       <p>{number}</p>
       <ContactBtn

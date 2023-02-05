@@ -10,7 +10,7 @@ import Loader from './Loader/Loader';
 import Register from 'pages/Register';
 import { Home } from 'pages/Home';
 import Login from 'pages/Login';
-import ContactList from './ContactList/ContactList';
+import Contacts from 'pages/Contacts';
 
 // const HomePage = lazy(() => import('../pages/Home'));
 // const RegisterPage = lazy(() => import('../pages/Register'));
@@ -46,7 +46,7 @@ export const App = () => {
         <Route
           path="/contacts"
           element={
-            <PrivateRoute redirectTo="/login" component={<ContactList />} />
+            <PrivateRoute redirectTo="/login" component={<Contacts />} />
           }
         />
       </Route>
