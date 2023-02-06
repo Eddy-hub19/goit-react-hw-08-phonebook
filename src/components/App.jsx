@@ -7,15 +7,10 @@ import { refreshUser } from 'redux/auth/operations';
 import { Layout } from './Layout/Layout';
 import { useAuth } from 'hooks';
 import Loader from './Loader/Loader';
-import Register from 'pages/Register';
 import { Home } from 'pages/Home';
+import Register from 'pages/Register';
 import Login from 'pages/Login';
 import Contacts from 'pages/Contacts';
-
-// const HomePage = lazy(() => import('../pages/Home'));
-// const RegisterPage = lazy(() => import('../pages/Register'));
-// const LoginPage = lazy(() => import('../pages/Login'));
-// const ContactsPage = lazy(() => import('../pages/Contacts'));
 
 export const App = () => {
   const dispatch = useDispatch();

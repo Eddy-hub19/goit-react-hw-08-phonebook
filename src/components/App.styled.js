@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 // App
 export const Container = styled.div`
@@ -94,6 +95,12 @@ export const WrapFilter = styled.div`
   text-align: center;
 `;
 
-export const link = styled.a`
-  color: red;
+// AuthNav
+
+export const Link = styled(NavLink)`
+  color: black;
+  margin-left: 20px;
+  &.active {
+    color: white !important;
+  }
 `;

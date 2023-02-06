@@ -5,7 +5,7 @@ import ContactForm from 'components/ContactForm/ContactForm';
 import Filter from 'components/Filter/Filter';
 import Loader from 'components/Loader/Loader';
 import ContactList from 'components/ContactList/ContactList';
-import { Container, Header, Message, Title, Wrap } from 'components/App.styled';
+import { Container, Message, Title, Wrap } from 'components/App.styled';
 
 export const ContactEditor = () => {
   const isLoading = useSelector(selectIsLoading);
@@ -14,9 +14,6 @@ export const ContactEditor = () => {
 
   return (
     <Container>
-      <Header>
-        <h1>YOUR PHONE BOOK</h1>
-      </Header>
       <Wrap>
         <Title>Add new contact</Title>
         <ContactForm />

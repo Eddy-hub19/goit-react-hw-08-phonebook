@@ -10,6 +10,7 @@ export const AppBar = () => {
   return (
     <Header>
       <Navigation />
+      <h1>YOUR PHONE BOOK</h1>
       {isLoggedIn ? <UserMenu /> : <AuthNav />}
     </Header>
   );

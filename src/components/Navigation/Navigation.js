@@ -1,5 +1,5 @@
+import { Link } from 'components/App.styled';
 import { useAuth } from 'hooks';
-import { Link } from 'react-router-dom';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();

@@ -5,13 +5,6 @@ import { deleteContact } from 'redux/contacts/operations';
 import { ContactBtn, ContactItem, Name } from '../ContactList.styled';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-//Logout
-// import IconButton from '@mui/material/IconButton';
-// import LogoutIcon from '@mui/icons-material/Logout';
-/* <IconButton> */
-/* <LogoutIcon /> */
-/* </IconButton> */
-
 export default function Contact({ id, name, number }) {
   const dispatch = useDispatch();
   const handleDelete = () => {
